@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <!-- font awesome -->
+  <script src="js/all.js"></script>
+ <title>WorkShop</title>
+ </head>
+
+ <body>
+  
+  <div  class="container">
+    <h1>Carrousel</h1>
+    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!-- Indicateurs -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="3"></li>
+      </ol>
+
+      <!-- Carrousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="img/car-default.jpeg" alt="Carrousel slide 1" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/car-american-4.jpeg" alt="Carrousel slide 2" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="img/car-german-3.jpeg" alt="Carrousel slide 3" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="img/dfxdfg.jpg" alt="Carrousel slide 4" class="d-block w-100">
+        </div>
+      </div>
+      
+      <!-- Contrôles -->
+      <a class="carousel-control-prev" href="#demo" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Précédent</span>
+      </a>
+      <a class="carousel-control-next" href="#demo" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Suivant</span>
+      </a>
+    </div>
+  </div>
+ 
+<!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  
+ </body>
+</html>

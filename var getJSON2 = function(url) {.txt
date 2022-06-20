@@ -1,0 +1,35 @@
+var getJSON2 = function(url) {
+    return new Promise(function (data,err){
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    console.log(xhr);
+    xhr.onload = function() {
+    var status = xhr.status;
+    if (status === 200) {
+    data(xhr.response);
+    } else {
+    err(status, xhr.response);
+    }
+    }
+    xhr.send();
+    });
+    };
+    
+    
+    
+    var rep = getJSON2('http://geekpress.fr/wp-json/wp/v2/users',
+    function(err, data) {
+    if (err !== null) {
+    alert('Something went wrong: ' + err);
+    }
+    else {
+        getJSON2(url+nbUser)
+        .then(auteurId);
+        const auteurId = function(data){
+        console.log(data);
+        }
+    }
+    return data;
+    }
+    );
